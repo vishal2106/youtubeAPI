@@ -7,10 +7,9 @@ from .models import Video
 import requests
 import datetime
 
-# Create your views here.
 def index(request):
 
-    # async process repeats every 10 seconds
+    # async process repeats every 1 hour
     fetch_feed(repeat=3600)
 
     # list all videos from model
